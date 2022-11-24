@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75); /* paragraphs */
+  --very-light-gray: hsl(0, 0%, 95%); /* background, headings, buttons */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  background-color: var(--very-light-gray);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  width: 900px;
+  height: 500px;
+  margin: 200px auto;
+}
+
+.column {
+  width: 33.33%;
+  padding: 40px 50px 40px 40px;
+}
+
+.column h1 {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-size: 2.5rem;
+  color: var(--very-light-gray);
+  margin-top: 30px;
+}
+
+.column p {
+  font-family: 'Lexend Deca', sans-serif;
+  color: var(--transparent-white);
+  line-height: 25px;
+  margin-top: 30px;
+}
+
+button {
+  font-family: 'Lexend Deca', sans-serif;
+  border: none;
+  background: var(--very-light-gray);
+  height: 45px;
+  width: 143px;
+  border-radius: 25px;
+  border: solid 2px var(--very-light-gray);
+  margin-top: 95px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.main-container .sedans {
+  background-color: var(--bright-orange);
+  border-radius: 10px 0 0 10px;
+}
+
+.main-container .suvs {
+  background-color: var(--dark-cyan);
+}
+
+.main-container .luxury {
+ background-color: var(--very-dark-cyan);
+ border-radius: 0 10px 10px 0;
+}
+
+.sedans button {
+  color: var(--bright-orange);
+}
+
+.sedans button:hover {
+  color: var(--very-light-gray);
+  background-color: var(--bright-orange);
+}
+
+.suvs button {
+  color: var(--dark-cyan);
+}
+
+.suvs button:hover {
+  color: var(--very-light-gray);
+  background-color: var(--dark-cyan);
+}
+
+.luxury button {
+  color: var(--very-dark-cyan);
+}
+
+.luxury button:hover {
+  color: var(--very-light-gray);
+  background-color: var(--very-dark-cyan);
+}
